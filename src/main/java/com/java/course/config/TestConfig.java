@@ -2,24 +2,22 @@ package com.java.course.config;
 
 import java.time.Instant;
 import java.util.Arrays;
+import java.util.Locale.Category;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.educandoweb.course.entities.Category;
-import com.educandoweb.course.entities.Order;
-import com.educandoweb.course.entities.OrderItem;
-import com.educandoweb.course.entities.Payment;
-import com.educandoweb.course.entities.Product;
-import com.educandoweb.course.entities.User;
-import com.educandoweb.course.entities.enums.OrderStatus;
-import com.educandoweb.course.repositories.CategoryRepository;
-import com.educandoweb.course.repositories.OrderItemRepository;
-import com.educandoweb.course.repositories.OrderRepository;
-import com.educandoweb.course.repositories.ProductRepository;
-import com.educandoweb.course.repositories.UserRepository;
+import com.java.course.entities.Order;
+import com.java.course.entities.OrderItem;
+import com.java.course.entities.Payment;
+import com.java.course.entities.User;
+import com.java.course.entities.enums.OrderStatus;
+import com.java.course.repositories.OrderRepository;
+import com.java.course.repositories.UserRepository;
+
+
 
 @Configuration
 @Profile("test")
