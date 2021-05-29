@@ -16,6 +16,7 @@ import com.java.course.entities.Product;
 import com.java.course.entities.User;
 import com.java.course.entities.enums.OrderStatus;
 import com.java.course.repositories.CategoryRepository;
+import com.java.course.repositories.OrderItemRepository;
 import com.java.course.repositories.OrderRepository;
 import com.java.course.repositories.ProductRepository;
 import com.java.course.repositories.UserRepository;
@@ -37,7 +38,7 @@ public class TestConfig implements CommandLineRunner {
 	private ProductRepository productRepository;
 	
 	@Autowired
-	private OrderRepository orderItemRepository;
+	private OrderItemRepository orderItemRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
